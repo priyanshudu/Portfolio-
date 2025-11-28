@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyanshu Dubey - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Priyanshu Dubey</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <div class="hero-left">
+        <h1>Hi, I'm <span class="name">Priyanshu Dubey</span></h1>
+        <h2 class="role">CS Student</h2>
+        <p class="bio">
+          I am a curious Computer Science student passionate about full-stack and mobile development. Skilled in Python, JavaScript, databases, and data science, I enjoy building projects, solving problems, and creating impactful solutions while continuously learning.
+        </p>
+        <p>Contact: <a href="mailto:driyanshu498@gmail.com">driyanshu498@gmail.com</a></p>
+        <div class="buttons">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/priyanshu-dubey-137a7a204/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/priyanshudu" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="my photo.jpg" alt="Priyanshu Dubey" class="hero-photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a dedicated Computer Science student with experience in full-stack and mobile app development. I love solving real-world problems, learning new technologies, and contributing to impactful projects.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Programming Languages:</strong> Python, JavaScript</li>
+        <li><strong>Machine Learning:</strong> scikit-learn, ML concepts</li>
+        <li><strong>Git/GitHub</strong></li>
+        <li><strong>DBMS:</strong> MongoDB, PostgreSQL, Supabase, SQL</li>
+        <li><strong>Linux</strong></li>
+        <li><strong>Data Analysis & Visualization:</strong> Pandas, NumPy, Matplotlib</li>
+        <li><strong>Backend:</strong> Node.js, Express.js</li>
+        <li><strong>Web Development:</strong> HTML, CSS, Tkinter</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>Student Management System (Flutter + Supabase)</h3>
+          <p>Mobile app to manage student records with real-time database integration. CRUD operations with Supabase backend.</p>
+          <p class="project-meta">Tech Stack: Flutter, Supabase</p>
+        </div>
+        <div class="project">
+          <h3>Student Management System (Python Tkinter)</h3>
+          <p>GUI-based application for student record management using Python, Tkinter, and SQLite. Developed and tested on Replit.</p>
+          <p class="project-meta">Tech Stack: Python, Tkinter, SQLite, Replit</p>
+        </div>
+        <div class="project">
+          <h3>E-Voting System for College Election</h3>
+          <p>Developed a secure voting platform with role-based access for Admin and Voters. Features: vote casting, live result updates.</p>
+          <p class="project-meta">Tech Stack: Node.js, Express.js, Supabase, JavaScript, MySQL</p>
+        </div>
+        <div class="project">
+          <h3>Calculator (Python Tkinter)</h3>
+          <p>Basic calculator with GUI interface using Tkinter.</p>
+          <p class="project-meta">Tech Stack: Python, Tkinter</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:driyanshu498@gmail.com">driyanshu498@gmail.com</a></p>
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="nameField" placeholder="Your Name" required>
+        <input type="email" id="emailField" placeholder="Your Email" required>
+        <textarea id="msgField" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> Priyanshu Dubey</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
