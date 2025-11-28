@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="hero-right">
-        <img src="my photo.jpg" alt="Priyanshu Dubey" class="hero-photo">
+        <img src="profile.jpg" alt="Priyanshu Dubey" class="hero-photo">
       </div>
     </div>
   </section>
@@ -106,12 +106,16 @@
     <div class="container">
       <h2>Contact Me</h2>
       <p>Email: <a href="mailto:driyanshu498@gmail.com">driyanshu498@gmail.com</a></p>
-      <form id="contactForm" class="contact-form">
-        <input type="text" id="nameField" placeholder="Your Name" required>
-        <input type="email" id="emailField" placeholder="Your Email" required>
-        <textarea id="msgField" placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+      <form action="https://formsubmit.co/driyanshu498@gmail.com" method="POST" class="contact-form">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+
+  <!-- Optional: redirect to a thank you page -->
+  <input type="hidden" name="_next" value="https://priyanshudu.github.io/Portfolio-/thankyou.html">
+
+  <button type="submit" class="btn">Send Message</button>
+</form>
     </div>
   </section>
 
