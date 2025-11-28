@@ -1,0 +1,35 @@
+/* Basic clean layout */
+:root{
+  --bg:#f7f7f9;
+  --card:#ffffff;
+  --accent:#0b74ff;
+  --text:#222;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; background:var(--bg); color:var(--text); scroll-behavior: smooth;}
+.container{max-width:1000px; margin:0 auto; padding:24px;}
+.navbar{position:fixed; top:0; width:100%; background:rgba(255,255,255,0.9); box-shadow:0 2px 6px rgba(0,0,0,0.05); z-index:999;}
+.nav-container{display:flex; justify-content:space-between; align-items:center; padding:12px 24px;}
+.nav-links{list-style:none; display:flex; gap:20px;}
+.nav-links li a{text-decoration:none; color:var(--text); font-weight:500; transition:0.3s;}
+.nav-links li a:hover{color:var(--accent);}
+.hero{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; padding:120px 24px 60px;}
+.hero-left{flex:1; min-width:280px;}
+.hero-right{flex:1; min-width:250px; text-align:center;}
+.hero-photo{width:250px; height:250px; object-fit:cover; border-radius:50%; box-shadow:0 10px 20px rgba(0,0,0,0.1); animation:float 3s ease-in-out infinite;}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+.name{font-size:32px; font-weight:700; letter-spacing:1px;}
+.role{margin:8px 0 12px; font-weight:500; opacity:0.9;}
+.bio{max-width:600px; margin-bottom:12px;}
+.btn{display:inline-block; padding:10px 16px; border-radius:8px; background:var(--accent); color:#fff; text-decoration:none; margin:6px 6px 6px 0;}
+.social a{margin-right:12px; text-decoration:none; color:var(--text);}
+.section{padding:80px 24px;}
+.skills-list{list-style:none; display:flex; flex-wrap:wrap; gap:12px; margin-top:12px;}
+.skills-list li{background:#f0f4ff; padding:8px 12px; border-radius:999px; font-size:14px;}
+.projects-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:16px;}
+.project{background:var(--card); padding:14px; border-radius:10px; box-shadow:0 6px 18px rgba(15,15,15,0.05);}
+.project-meta{font-size:13px; color:#666; margin-top:6px;}
+.contact-form{display:grid; gap:12px; margin-top:12px;}
+.contact-form input, .contact-form textarea{padding:10px; border:1px solid #e6e9ef; border-radius:6px;}
+.footer{padding:18px 0; text-align:center; margin-top:18px; font-size:14px; color:#666;}
+@media(max-width:860px){.hero{flex-direction:column; text-align:center; padding-top:140px;} .hero-left{order:2;} .hero-right{order:1; margin-bottom:20px;} .hero-photo{width:200px; height:200px;}}
