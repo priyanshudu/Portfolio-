@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Priyanshu Dubey - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="portfolio_style.css">
 </head>
 <body>
 
@@ -15,6 +15,7 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -25,24 +26,25 @@
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="container hero-container">
-      <div class="hero-left">
+      <div class="hero-content">
         <h1>Hi, I'm <span class="name">Priyanshu Dubey</span></h1>
-        <h2 class="role">CS Student</h2>
+        <h2 class="role">Computer Science Student | Full-Stack Developer</h2>
         <p class="bio">
-          I am a curious Computer Science student passionate about full-stack and mobile development. Skilled in Python, JavaScript, databases, and data science, I enjoy building projects, solving problems, and creating impactful solutions while continuously learning.
+          I am very interested in Computer Science and climate change. I am looking for an opportunity to work with some of the best minds, where I can learn, grow, and contribute my skills in a meaningful way.
         </p>
-        <p>Contact: <a href="mailto:driyanshu498@gmail.com">driyanshu498@gmail.com</a></p>
+        <div class="contact-info">
+          <p><strong>📱 Phone:</strong> 7977684994</p>
+          <p><strong>📧 Email:</strong> <a href="mailto:dpriyanshu498@gmail.com">dpriyanshu498@gmail.com</a></p>
+          <p><strong>📍 Location:</strong> Mumbai</p>
+        </div>
         <div class="buttons">
-          <a href="#projects" class="btn">View Projects</a>
-          <a href="#contact" class="btn">Contact Me</a>
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
         <div class="social">
-          <a href="https://www.linkedin.com/in/priyanshu-dubey-137a7a204/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/priyanshudu" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/priyanshu-dubey-137a7a204/" target="_blank" class="social-link">LinkedIn</a>
+          <a href="https://github.com/priyanshudu" target="_blank" class="social-link">GitHub</a>
         </div>
-      </div>
-      <div class="hero-right">
-        <img src="my photo.jpg" alt="Priyanshu Dubey" class="hero-photo">
       </div>
     </div>
   </section>
@@ -51,7 +53,40 @@
   <section id="about" class="section about">
     <div class="container">
       <h2>About Me</h2>
-      <p>I am a dedicated Computer Science student with experience in full-stack and mobile app development. I love solving real-world problems, learning new technologies, and contributing to impactful projects.</p>
+      <p>I am a dedicated Computer Science student with a passion for full-stack web development and data science. I have hands-on experience developing complete applications from design to deployment. I am committed to continuous learning, problem-solving, and creating impactful solutions that contribute to meaningful projects.</p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>Intern</h3>
+          <span class="company">Rkfood Land, Thane, Maharashtra</span>
+          <span class="date">17-Nov-2025 to 24-DEC-2025</span>
+        </div>
+        <p>I have worked independently and developed a complete sample application by myself. I handled the full development process including design, coding, and basic testing. This helped me improve my practical knowledge and problem-solving skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>B.Sc Computer Science</h3>
+        <p><strong>University:</strong> Mumbai</p>
+        <p><strong>Status:</strong> Pursuing (2023-Present)</p>
+      </div>
+      <div class="education-item">
+        <h3>Senior Secondary (12th)</h3>
+        <p><strong>Board:</strong> CBSE</p>
+        <p><strong>Location:</strong> Mumbai</p>
+        <p><strong>Year:</strong> 2022-2023</p>
+      </div>
     </div>
   </section>
 
@@ -59,16 +94,67 @@
   <section id="skills" class="section skills">
     <div class="container">
       <h2>Skills</h2>
-      <ul class="skills-list">
-        <li><strong>Programming Languages:</strong> Python, JavaScript</li>
-        <li><strong>Machine Learning:</strong> scikit-learn, ML concepts</li>
-        <li><strong>Git/GitHub</strong></li>
-        <li><strong>DBMS:</strong> MongoDB, PostgreSQL, Supabase, SQL</li>
-        <li><strong>Linux</strong></li>
-        <li><strong>Data Analysis & Visualization:</strong> Pandas, NumPy, Matplotlib</li>
-        <li><strong>Backend:</strong> Node.js, Express.js</li>
-        <li><strong>Web Development:</strong> HTML, CSS, Tkinter</li>
-      </ul>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Data Analysis & Visualization</h3>
+          <ul>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Matplotlib</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Database Management</h3>
+          <ul>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>Supabase</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Backend Development</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Web Development</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Tkinter</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Machine Learning</h3>
+          <ul>
+            <li>scikit-learn</li>
+            <li>ML Concepts</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Operating Systems</h3>
+          <ul>
+            <li>Linux</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Version Control</h3>
+          <ul>
+            <li>Git/GitHub</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -77,60 +163,63 @@
     <div class="container">
       <h2>Projects</h2>
       <div class="projects-grid">
-        <div class="project">
-          <h3>Timepass website  </h3>
-          <p>Basic web page made for timepass made for personal interset.</p>
-          <p class="project-meta">Tech Stack: Html, Css</p>
+        <div class="project-card">
+          <h3>Portfolio</h3>
+          <p>A personal portfolio website built using HTML and CSS. It presents sections like introduction, skills, and projects in a clean, single-page layout. CSS is used to style the content for a simple, professional look.</p>
+          <p class="project-meta">Tech Stack: HTML, CSS</p>
         </div>
-        <div class="project">
-          <h3>Student Management System (Flutter + Supabase)</h3>
-          <p>Mobile app to manage student records with real-time database integration. CRUD operations with Supabase backend.</p>
-          <p class="project-meta">Tech Stack: Flutter, Supabase</p>
+        <div class="project-card">
+          <h3>E-Voting System for College</h3>
+          <p>A full-stack web application for secure college elections. The frontend handles the voting interface and user interactions, while the backend (Node + Express) manages routes, vote processing, and API logic. Supabase ensures secure storage and one-vote-per-user validation.</p>
+          <p class="project-meta">Tech Stack: HTML, CSS, JavaScript, Node.js, Express, Supabase</p>
         </div>
-        <div class="project">
+        <div class="project-card">
           <h3>Student Management System (Python Tkinter)</h3>
-          <p>GUI-based application for student record management using Python, Tkinter, and SQLite. Developed and tested on Replit.</p>
-          <p class="project-meta">Tech Stack: Python, Tkinter, SQLite, Replit</p>
+          <p>A desktop-based student management system built using Python and Tkinter, with SQLite as the backend database. It offers a GUI to create, view, update, and delete student records, showcasing full CRUD operations with persistent local storage.</p>
+          <p class="project-meta">Tech Stack: Python, Tkinter, SQLite</p>
         </div>
-        <div class="project">
-          <h3>E-Voting System for College Election</h3>
-          <p>Developed a secure voting platform with role-based access for Admin and Voters. Features: vote casting, live result updates.</p>
-          <p class="project-meta">Tech Stack: Node.js, Express.js, Supabase, JavaScript, MySQL</p>
-        </div>
-        <div class="project">
+        <div class="project-card">
           <h3>Calculator (Python Tkinter)</h3>
-          <p>Basic calculator with GUI interface using Tkinter.</p>
+          <p>A simple GUI calculator developed in Python using Tkinter. It supports basic arithmetic operations through interactive buttons and a display screen, providing a user-friendly interface for calculations.</p>
           <p class="project-meta">Tech Stack: Python, Tkinter</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Certificates Section -->
+  <section class="section certificates">
+    <div class="container">
+      <h2>Certificates</h2>
+      <ul class="certificates-list">
+        <li>✓ Python Programming Certification - Scaler (Online)</li>
+        <li>✓ Data Science Certification - Infosys Springboard (Online)</li>
+        <li>✓ Object-Oriented Programming (OOP) Certification - Infosys Springboard (Online)</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="section contact">
     <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:driyanshu498@gmail.com">driyanshu498@gmail.com</a></p>
-      <form action="https://formsubmit.co/driyanshu498@gmail.com" method="POST" class="contact-form">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-
-  <!-- Optional: redirect to a thank you page -->
-  <input type="hidden" name="_next" value="https://priyanshudu.github.io/Portfolio-/thankyou.html">
-
-  <button type="submit" class="btn">Send Message</button>
-</form>
+      <h2>Get In Touch</h2>
+      <p>Feel free to reach out to me for any opportunities or collaborations!</p>
+      <form action="https://formsubmit.co/dpriyanshu498@gmail.com" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <small>© <span id="year"></span> Priyanshu Dubey</small>
+      <small>© <span id="year"></span> Priyanshu Dubey. All rights reserved.</small>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="portfolio_script.js"></script>
 </body>
 </html>
