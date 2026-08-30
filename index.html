@@ -1,382 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Priyanshu Dubey Portfolio</title>
-
+<title>Priyanshu Dubey — Backend / Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
 <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-<header>
+<div class="grid-bg"></div>
 
-<h1>Priyanshu Dubey</h1>
-<p>Computer Science Student | Developer</p>
-
+<!--==================== HEADER ====================-->
+<header class="header" id="header">
+  <nav class="nav">
+    <a href="#home" class="nav__logo mono">priyanshu.dev</a>
+    <div class="nav__menu" id="nav-menu">
+      <i class="ri-close-line nav__close" id="nav-close"></i>
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link">home</a></li>
+        <li><a href="#about" class="nav__link">about</a></li>
+        <li><a href="#services" class="nav__link">skills</a></li>
+        <li><a href="#projects" class="nav__link">projects</a></li>
+        <li><a href="#contact" class="nav__link">contact</a></li>
+      </ul>
+    </div>
+    <i class="ri-menu-line nav__toggle" id="nav-toggle"></i>
+  </nav>
 </header>
 
-
-<nav>
-
-<a href="#about">About</a>
-<a href="#education">Education</a>
-<a href="#experience">Experience</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#certificates">Certificates</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
-
-<section id="about" class="about">
-
-<img src="my photo.jpg" class="profile">
-
-<div>
-
-<h2>About Me</h2>
-
-<p>
-I am a Computer Science student passionate about technology,
-software development and problem solving. I enjoy building
-applications and learning new tools that can solve real world
-problems and contribute to meaningful innovations.
-</p>
-
-</div>
-
-</section>
-
-
-<section id="education">
-
-<h2>Education</h2>
-
-<div class="card">
-
-<h3>B.Sc Computer Science</h3>
-<p>Mumbai University</p>
-<p>2023 - Pursuing</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Senior Secondary (CBSE)</h3>
-<p>Mumbai</p>
-<p>2022 - 2023</p>
-
-</div>
-
-</section>
-
-
-<section id="experience">
-
-<h2>Experience</h2>
-
-<div class="card">
-
-<h3>Intern</h3>
-<p>RK Food Land, Thane</p>
-<p>17 Nov 2025 – 24 Dec 2025</p>
-
-<p>
-Worked independently and developed a complete sample
-application. Handled the full development cycle including
-design, coding and testing which improved my practical
-development and problem solving skills.
-</p>
-
-</div>
-
-</section>
-
-
-
-<section id="skills">
-
-<h2 class="section-title">Skills</h2>
-
-<div class="skills-container">
-
-<div class="skill-box">
-
-<h3>Programming Languages</h3>
-
-<div class="skill">
-<span>Python</span>
-<div class="bar"><div class="progress python"></div></div>
-</div>
-
-<div class="skill">
-<span>JavaScript</span>
-<div class="bar"><div class="progress js"></div></div>
-</div>
-
-<div class="skill">
-<span>C#</span>
-<div class="bar"><div class="progress csharp"></div></div>
-</div>
-
-</div>
-
-
-
-<div class="skill-box">
-
-<h3>Data Analysis & Visualization</h3>
-
-<div class="skill">
-<span>Pandas</span>
-<div class="bar"><div class="progress pandas"></div></div>
-</div>
-
-<div class="skill">
-<span>NumPy</span>
-<div class="bar"><div class="progress numpy"></div></div>
-</div>
-
-<div class="skill">
-<span>Matplotlib</span>
-<div class="bar"><div class="progress matplotlib"></div></div>
-</div>
-
-</div>
-
-
-
-<div class="skill-box">
-
-<h3>DBMS</h3>
-
-<div class="skill">
-<span>MongoDB</span>
-<div class="bar"><div class="progress mongo"></div></div>
-</div>
-
-<div class="skill">
-<span>PostgreSQL</span>
-<div class="bar"><div class="progress postgres"></div></div>
-</div>
-
-<div class="skill">
-<span>Supabase</span>
-<div class="bar"><div class="progress supabase"></div></div>
-</div>
-
-<div class="skill">
-<span>SQL</span>
-<div class="bar"><div class="progress sql"></div></div>
-</div>
-
-</div>
-
-
-
-<div class="skill-box">
-
-<h3>Operating System</h3>
-
-<div class="skill">
-<span>Linux</span>
-<div class="bar"><div class="progress linux"></div></div>
-</div>
-
-</div>
-
-
-
-<div class="skill-box">
-
-<h3>Backend</h3>
-
-<div class="skill">
-<span>Node.js</span>
-<div class="bar"><div class="progress node"></div></div>
-</div>
-
-<div class="skill">
-<span>Express.js</span>
-<div class="bar"><div class="progress express"></div></div>
-</div>
-
-</div>
-
-
-
-<div class="skill-box">
-
-<h3>Web Development</h3>
-
-<div class="skill">
-<span>HTML</span>
-<div class="bar"><div class="progress html"></div></div>
-</div>
-
-<div class="skill">
-<span>CSS</span>
-<div class="bar"><div class="progress css"></div></div>
-</div>
-
-<div class="skill">
-<span>Tkinter</span>
-<div class="bar"><div class="progress tkinter"></div></div>
-</div>
-
-</div>
-
-
-
-<div class="skill-box">
-
-<h3>Machine Learning</h3>
-
-<div class="skill">
-<span>scikit-learn</span>
-<div class="bar"><div class="progress sklearn"></div></div>
-</div>
-
-<div class="skill">
-<span>ML Concepts</span>
-<div class="bar"><div class="progress ml"></div></div>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-
-<div class="project">
-
-<h3>Portfolio Website</h3>
-
-<p>
-Personal portfolio website built using HTML and CSS
-to present skills, projects and profile in a simple
-professional layout.
-</p>
-
-</div>
-
-
-
-<div class="project">
-
-<h3>E-Voting System for College</h3>
-
-<p>
-Full stack web application built using HTML, CSS,
-JavaScript, Node.js, Express and Supabase for
-secure online voting.
-</p>
-
-</div>
-
-
-
-<div class="project">
-
-<h3>Student Management System</h3>
-
-<p>
-Desktop application using Python Tkinter and SQLite
-supporting CRUD operations to manage student records.
-</p>
-
-</div>
-
-
-
-<div class="project">
-
-<h3>Python GUI Calculator</h3>
-
-<p>
-Calculator application built using Python Tkinter
-for performing basic arithmetic operations.
-</p>
-
-</div>
-
-
-
-<div class="project">
-
-<h3>Console Student System (C#)</h3>
-
-<p>
-Console based student management system developed
-in C# that allows adding and viewing student records
-using object oriented programming concepts.
-</p>
-
-</div>
-
-
-</section>
-
-
-
-<section id="certificates">
-
-<h2>Certificates</h2>
-
-<ul>
-
-<li>Python Programming Certification – Scaler</li>
-
-<li>Data Science Certification – Infosys Springboard</li>
-
-<li>Object Oriented Programming Certification – Infosys Springboard</li>
-
-</ul>
-
-</section>
-
-
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>📞 7977684994</p>
-
-<p>📧 dpriyanshu498@gmail.com</p>
-
-<p>📍 Mumbai</p>
-
-<p>
-<a href="https://www.linkedin.com/in/priyanshu-dubey-137a7a204/" target="_blank">
-LinkedIn Profile
-</a>
-</p>
-
-</section>
-
-
-<footer>
-
-<p>© 2026 Priyanshu Dubey</p>
-
+<!--==================== MAIN ====================-->
+<main class="main">
+
+  <!--==================== HOME ====================-->
+  <section class="home section" id="home">
+    <div class="home__left">
+      <div class="eyebrow">available for internships</div>
+      <h1 class="home__title">Priyanshu Dubey<br>builds <span>backend systems</span> that hold up.</h1>
+      <p class="home__desc">Full-stack &amp; backend developer with a soft spot for climate and environmental problems. I like taking a system from a blank requirements doc all the way to something live in production.</p>
+      <p class="typed mono" id="typed"></p>
+      <div class="btn-row">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="home__right">
+      <div class="photo-frame">
+        <!-- Replace src below with your own photo, e.g. assets/img/profile.jpg -->
+        <img src="assets/img/profile.jpg" alt="Priyanshu Dubey" id="profile-photo" onerror="this.style.display='none'; document.getElementById('photo-fallback').style.display='flex';">
+        <div class="photo-fallback" id="photo-fallback">
+          <i class="ri-user-3-line"></i>
+          <span class="mono">drop your photo at<br>assets/img/profile.jpg</span>
+        </div>
+        <div class="photo-corner tl"></div>
+        <div class="photo-corner tr"></div>
+        <div class="photo-corner bl"></div>
+        <div class="photo-corner br"></div>
+      </div>
+    </div>
+  </section>
+
+  <!--==================== ABOUT ====================-->
+  <section class="about section" id="about">
+    <div class="section__head"><span class="section__tag mono">$ cat about.txt</span><div class="rule"></div><h2>About</h2></div>
+    <div class="about__container">
+      <div class="about__box">
+        <h3>Quick facts</h3>
+        <div class="mono-item"><span>Location</span><b>Mumbai, India</b></div>
+        <div class="mono-item"><span>Degree</span><b>BSc Computer Science</b></div>
+        <div class="mono-item"><span>CGPA</span><b>7.8</b></div>
+        <div class="mono-item"><span>Now studying</span><b>M.Sc. IT, Mumbai University</b></div>
+        <div class="mono-item"><span>Looking for</span><b>Internship / part-time role</b></div>
+      </div>
+      <div class="about__desc">
+        <p>Hello, I'm Priyanshu Dubey. I completed my Bachelor's degree in Computer Science and I'm passionate about technology, with hands-on experience in full-stack web development, software development, and building real-world applications. Outside of tech, I care about environmental sustainability and climate change — I enjoy learning new things, solving problems, and contributing to projects that create a positive impact on society.</p>
+
+        <div class="timeline-item">
+          <div class="date">Nov 2025 — Dec 2025</div>
+          <div>
+            <h4>Software Developer</h4>
+            <div class="org">Radhakrishna Foodland Private Limited</div>
+            <p>Designed and developed a company hiring platform independently, managing the complete SDLC — requirement gathering, documentation, system design, development, testing, and deployment. The platform streamlines recruitment, enabling efficient job posting, candidate applications, and hiring management.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">2026 — 2028</div>
+          <div><h4>M.Sc. Information Technology</h4><div class="org">Mumbai University, Mumbai</div></div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">2023 — 2026</div>
+          <div><h4>BSc Computer Science</h4><div class="org">Mithibai College of Arts, Chauhan Institute of Science &amp; Amrutben Jivanlal College of Commerce and Economics</div><p>CGPA — 7.8</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==================== SERVICES (capabilities + skills) ====================-->
+  <section class="services section" id="services">
+    <div class="section__head"><span class="section__tag mono">$ npm run capabilities</span><div class="rule"></div><h2>What I do</h2></div>
+    <div class="services__container">
+      <div class="services__card">
+        <i class="ri-server-line"></i>
+        <h3>Backend Development</h3>
+        <p>Building REST APIs and server-side logic with Node.js and Express.js.</p>
+      </div>
+      <div class="services__card">
+        <i class="ri-database-2-line"></i>
+        <h3>Database Design</h3>
+        <p>Schema design and queries across MongoDB, MySQL, and Firebase.</p>
+      </div>
+      <div class="services__card">
+        <i class="ri-shield-keyhole-line"></i>
+        <h3>Auth &amp; Security</h3>
+        <p>JWT-based authentication and role-based access control.</p>
+      </div>
+      <div class="services__card">
+        <i class="ri-layout-grid-line"></i>
+        <h3>System Design</h3>
+        <p>Planning systems end-to-end, from requirements through SDLC to deployment.</p>
+      </div>
+      <div class="services__card">
+        <i class="ri-cloud-line"></i>
+        <h3>Cloud &amp; Deployment</h3>
+        <p>Shipping and hosting applications using AWS and Linux environments.</p>
+      </div>
+      <div class="services__card">
+        <i class="ri-line-chart-line"></i>
+        <h3>Data &amp; ML basics</h3>
+        <p>Data analysis and modelling with Pandas, NumPy, Seaborn, and scikit-learn.</p>
+      </div>
+    </div>
+    <div class="tag-cloud">
+      <span class="tag-pill">JavaScript</span><span class="tag-pill">Python</span><span class="tag-pill">Node.js</span>
+      <span class="tag-pill">Express.js</span><span class="tag-pill">MongoDB</span><span class="tag-pill">MySQL</span>
+      <span class="tag-pill">SQL</span><span class="tag-pill">Firebase</span><span class="tag-pill">JWT</span>
+      <span class="tag-pill">REST API</span><span class="tag-pill">System Design</span><span class="tag-pill">SDLC</span>
+      <span class="tag-pill">AWS</span><span class="tag-pill">Linux</span><span class="tag-pill">Machine Learning</span>
+    </div>
+  </section>
+
+  <!--==================== PROJECTS ====================-->
+  <section class="projects section" id="projects">
+    <div class="section__head"><span class="section__tag mono">$ git log --projects</span><div class="rule"></div><h2>Projects</h2></div>
+    <div class="projects__container">
+      <div class="card">
+        <span class="date">Jun 2026 — Aug 2026</span>
+        <h3>Online Learning Platform</h3>
+        <p>Full-stack platform where students access chapters, subchapters, lessons, and quizzes with progress tracking and sequential content unlocking.</p>
+        <div class="stack"><span>Vue.js</span><span>TypeScript</span><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>Redis</span></div>
+      </div>
+      <div class="card">
+        <span class="date">Jun 2026 — Jul 2026</span>
+        <h3>india-institutes (npm package)</h3>
+        <p>Loads and manages institute data from JSON datasets such as IISER and SPA, with a modular loader structure for combining and accessing institute data.</p>
+        <div class="stack"><span>JavaScript</span><span>Node.js</span><span>npm</span><span>JSON</span></div>
+      </div>
+      <div class="card">
+        <span class="date">Jun 2025 — Aug 2025</span>
+        <h3>E-Voting System for College Election</h3>
+        <p>Secure voting platform with role-based access for Admin and Voters, supporting vote casting and live result updates.</p>
+        <div class="stack"><span>Node.js</span><span>Express.js</span><span>Supabase</span><span>JavaScript</span><span>MySQL</span></div>
+      </div>
+      <div class="card">
+        <span class="date">Oct 2025 — Nov 2025</span>
+        <h3>Portfolio</h3>
+        <p>Responsive personal website showcasing projects, skills, and links, designed for easy navigation and clear presentation of work samples.</p>
+        <div class="stack"><span>HTML</span><span>CSS</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!--==================== CONTACT ====================-->
+  <section class="contact section" id="contact">
+    <div class="section__head"><span class="section__tag mono">$ ./contact.sh</span><div class="rule"></div><h2>Get in touch</h2></div>
+    <ul class="contact__info">
+      <li><i class="ri-mail-line"></i><a href="mailto:dpriyanshu498@gmail.com">dpriyanshu498@gmail.com</a></li>
+      <li><i class="ri-phone-line"></i><a href="tel:+917977684994">+91 79776 84994</a></li>
+      <li><i class="ri-github-line"></i><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+      <li><i class="ri-linkedin-box-line"></i><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<!--==================== FOOTER ====================-->
+<footer class="footer">
+  <h2>Let's build something.</h2>
+  <div class="footer__social">
+    <a href="mailto:dpriyanshu498@gmail.com"><i class="ri-mail-line"></i></a>
+    <a href="#" target="_blank" rel="noopener"><i class="ri-github-line"></i></a>
+    <a href="#" target="_blank" rel="noopener"><i class="ri-linkedin-box-line"></i></a>
+  </div>
 </footer>
 
+<!--========== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-line"></i></a>
 
 <script src="script.js"></script>
-
 </body>
 </html>
