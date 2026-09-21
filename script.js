@@ -128,3 +128,33 @@ if (localStorage.getItem("portfolioTheme") === "light") {
 
 // Current year
 document.getElementById("year").textContent = new Date().getFullYear();
+// ================================
+// WALKING SLOTH
+// ================================
+
+const sloth = document.getElementById("walkingSloth");
+
+if (sloth) {
+  let x = 40;
+  let direction = 1; // 1 = right, -1 = left
+  const speed = 2.8;
+
+  function walkSloth() {
+    x += speed * direction;
+
+    // Turn around at edges
+    if (x > window.innerWidth - 130) {
+      direction = -1;
+      sloth.classList.add("facing-left");
+    }
+    if (x < 20) {
+      direction = 1;
+      sloth.classList.remove("facing-left");
+    }
+
+    sloth.style.left = x + "px";
+    requestAnimationFrame(walkSloth);
+  }
+
+  walkSloth();
+}
